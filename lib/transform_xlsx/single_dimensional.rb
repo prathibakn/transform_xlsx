@@ -1,4 +1,4 @@
-require 'transform_xlsx/data_type.rb'
+#require 'data_type'
 module TransformXlsx
   class SingleDimensional < DataType
       
@@ -6,8 +6,8 @@ module TransformXlsx
 
       #Go through each row and set first element in row as column, and rest of elements as values corresponding
       # to each element in first row . data(r,c) = value
-      def initialize
-        super
+      def initialize file_path, sheet_number, start_row
+        super(file_path, sheet_number, start_row)
       end
 
       def process_data

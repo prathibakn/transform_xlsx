@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "transform_xlsx"
   spec.version       = TransformXlsx::VERSION
   spec.authors       = ["Prathiba Kn"]
-  spec.email         = ["prathiba_kn@external.mckinsey.com"]
+  spec.email         = ["prathiba_kn@gmail.com"]
   spec.description   = %q{Transforms Excelx file into Hash Or Json objects}
   spec.summary       = %q{Transforms 1D and 2D excelx file into Hash or Json objects}
   spec.homepage      = ""

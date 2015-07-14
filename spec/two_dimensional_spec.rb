@@ -13,4 +13,11 @@ describe "TwoDimensional" do
     @convert.to_json.should eql json_result
   end
 
+  it "should raise error if sheet number does not exist" do
+    lambda{convert = TransformXlsx::TwoDimensional.new("spec/fixtures/Workbook1.xlsx", 100, 1)}.should raise_error
+  end
+
+  it "should raise error if the start row does not contain data" do
+    lambda{convert = TransformXlsx::TwoDimensional.new("spec/fixtures/Workbook1.xlsx", 1, 10)}.should raise_error
+  end
 end
